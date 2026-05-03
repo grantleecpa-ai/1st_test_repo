@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Commercial Real Estate Mortgage Cash Out Refinance Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    }
+    .input-group {
+      margin-bottom: 20px;
+    }
+    .input-group label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .input-group input[type="text"],
+    .input-group select {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+    }
+    .output-group {
+      margin-top: 20px;
+    }
+    .output-group h2 {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .output-group p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Commercial Real Estate Mortgage Cash Out Refinance Calculator</h1>
+    <form>
+      <div class="input-group">
+        <label for="property-value">Property Value:</label>
+        <input type="text" id="property-value" value="" />
+      </div>
+      <div class="input-group">
+        <label for="loan-amount">Loan Amount:</label>
+        <input type="text" id="loan-amount" value="" />
+      </div>
+      <div class="input-group">
+        <label for="current-loan-balance">Current Loan Balance:</label>
+        <input type="text" id="current-loan-balance" value="" />
+      </div>
+      <div class="input-group">
+        <label for="interest-rate">Interest Rate (%):</label>
+        <input type="text" id="interest-rate" value="" />
+      </div>
+      <div class="input-group">
+        <label for="term">Term (Years):</label>
+        <select id="term">
+          <option value="5">5 Years</option>
+          <option value="7">7 Years</option>
+          <option value="10">10 Years</option>
+          <option value="15">15 Years</option>
+          <option value="20">20 Years</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="prepayment-penalty">Prepayment Penalty:</label>
+        <input type="text" id="prepayment-penalty" value="" />
+      </div>
+      <div class="input-group">
+        <label for="defeasance-option">Defeasance Option (CMBS Loans Only):</label>
+        <select id="defeasance-option">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <button type="submit">Calculate</button>
+    </form>
+    <div class="output-group">
+      <h2>Results:</h2>
+      <p id="results"></p>
+    </div>
+  </div>
+
+  <script>
+    const calculator = {
+      calculate: function() {
+        // Your JavaScript calculation logic goes here
+      }
+    };
+
+    document.querySelector('button[type="submit"]').addEventListener('click', (e) => {
+      e.preventDefault();
+      calculator.calculate();
+    });
+  </script>
+</body>
+</html>
+```
+
+**
